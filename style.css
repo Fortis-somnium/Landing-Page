@@ -2,4 +2,12 @@
 
 body {
     font: 'Roboto' , sans-serif;
+    display:flex;
+    justify-content: center;
+}
+
+.header,
+.hero,
+.footer {
+    background-color: #1F2937;
 }
