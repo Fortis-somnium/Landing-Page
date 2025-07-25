@@ -11,27 +11,30 @@ body {
 .header {
     background-color: #1F2937;
     display:flex;
-    flex:1;
     justify-content: space-between;
-    align-items: center;
+    align-items: space-between;
+    flex-direction: column;
     padding: 0px 150px;
 }
 
-.logo {
-    color:#F9FAF8;
-    font-size: 15px;
-
+.upper-header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
- .links {
-    color:#F9FAF8;
-    font-size: 12px;
-    display:flex;
-    align-items: center;
- }
-
-.nav-list {
-    display:flex;
+ul {
+    display: flex;
     list-style: none;
-    gap : 10px;
+    gap:10px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.hero-image {
+    flex-grow:1;
 }
