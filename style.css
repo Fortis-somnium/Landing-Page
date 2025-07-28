@@ -12,7 +12,6 @@ body {
     background-color: #1F2937;
     display:flex;
     justify-content: space-between;
-    align-items: space-between;
     flex-direction: column;
     padding: 0px 150px 50px 150px;
 }
@@ -39,18 +38,25 @@ ul {
 .hero {
     display: flex;
     justify-content: space-between;
-    gap:20px;
+    align-items: center;
+    flex-wrap:wrap;
 }
 
-.hero h1 {
+.hero-text,
+.hero-img {
+    flex:1 1 200px;
+}
+
+.hero-text h1 {
     font-size: 48px;
     color:#F9FAF8;
     font-weight: 900;
 }
 
-.hero p {
+.hero-text p {
     font-size: 15px;
     color:#E5E7EB;
+    margin-top: 0px;
 }
 
 .hero-image {
@@ -77,6 +83,7 @@ button {
     display:flex;
     justify-content: center;
     gap:30px;
+     flex-wrap: wrap;
 }
 
 .info-content {
@@ -86,6 +93,7 @@ button {
     align-items: center;
     text-align: center;
     color:rgb(110,110,110);
+    flex:1 1 200px;
 }
 
 .info-img {
@@ -130,9 +138,13 @@ button {
     display: flex;
     background-color: #3882F6;
     border-radius: 10px;
-    gap:30px;
-    padding:30px 50px;
+    gap:50px;
+    padding:30px 30px;
     align-items: center;
+}
+
+.action-text {
+    flex:2 1 70%;
 }
 
 .action-text p {
@@ -140,6 +152,10 @@ button {
     margin-bottom: 0px;
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.action-btn {
+    flex:1 1 30%;
 }
 
 .action-btn button {
